@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Poppins;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .wrapper1,
+        .wrapper2 div {
+            background-color: black;
+        }
+        .wrapper1{
+            width: 37vw;
+            padding: 24px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper2{
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            width: 37vw;
+        }
+        .wrapper2 div{
+            width: 6rem;
+            height: 6.5rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .wrapper2 p{
+            font-size: 14px;
+            color: #707070;
+        }
+    </style>
+</head>
+
+<body style="background:#0a6cf1;">
+    <div class="flex">
+        <div class="wrapper1">
+            <input type="date" style="height:3rem;width:22rem;border-radius: 8px;padding: 10px;font-weight: font-weight: 500;">
+            <button style="height: 3rem; width: 7rem;border-radius: 8px;font-weight: 500;">Calculate</button>
+        </div>
+        <div class="wrapper2">
+            <div><span style="font-size:30px; font-weight: 500;">-</span>
+                <p>Years</p>
+            </div>
+            <div><span style="font-size:30px;font-weight: 500;">-</span>
+                <p>Months</p>
+            </div>
+            <div><span style="font-size:30px;font-weight: 500;">-</span>
+                <p>Days</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
